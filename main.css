@@ -1,40 +1,50 @@
-#caja {
-  background-color: green;
-  width: 100%;
-  height: 400px;
+/* ----------------------GENERAL---------------------- */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#caja1 {
-  background-color: blue;
 
-  margin: 5px;
-
-  width: 32%;
-
+/* ----------------------HEADER---------------------- */
+header {
+  /* width: 100%; */
+  height: 100px;
+  background-color: rgba(0, 0, 255, 0.253);
+}
+/* ----------------------CONTAINER---------------------- */
+.cajas {
+  width: 90%;
+  height: 100%;
+  margin: 10px auto;
+}
+/* ----------------------DIVS---------------------- */
+.cajas div {
+  width: 100%;
   height: 200px;
-
-  display: inline-block;
-  
+  margin: 10px 0px;
+  background-color: rgba(0, 0, 255, 0.404);
 }
-#caja2 {
-    background-color: blue;
 
-    margin: 5px;
-  
-    width: 32%;
-  
-    height: 200px;
-  
+/* ====================== QUIERI 768px ======================*/
+@media only screen and (min-width: 768px) {
+  header {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 255, 0.582);
+  }
+ 
+  .cajas div{
+    width: 49.7%;
     display: inline-block;
+    background-color: rgba(0, 0, 255, 0.664);
+  }
 }
-#caja3 {
-    background-color: blue;
 
-    margin: 5px;
-  
-    width: 32%;
-  
-    height: 200px;
-  
-    display: inline-block;
+/* ====================== QUIERI 992px ======================*/
+@media only screen and (min-width: 992px) {
+    .cajas div{
+        width: 33%;
+        display: inline-block;
+        background-color: rgba(0, 0, 255, 0.877);
+      }
 }
